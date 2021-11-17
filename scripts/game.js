@@ -52,3 +52,4 @@ function isWin() {
   }
   return false
 }
+

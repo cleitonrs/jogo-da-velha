@@ -16,7 +16,7 @@ function handleClick(event) {
       alert(`O jogo acabou! O vencedor foi o jogador ${playerTime + 1} `)
     }, 10)
   }
-  updateSquare(position) 
+  updateSquare(position)
 }
 
 function updateSquare(position) {
@@ -34,6 +34,16 @@ function updateSquares() {
 
     if (symbol != '') {
       square.innerHTML = `<div class='${symbol}'></div>`
+    } else {
+      square.innerHTML = ''
     }
   })
+}
+
+function resetGame() {
+
+  board = ['', '', '', '', '', '', '', '', '']
+  playerTime = 0
+  gameOver = false
+  updateSquares()
 }
