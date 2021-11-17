@@ -1,0 +1,71 @@
+:root {
+  /* 62.5% = 10px */
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+}
+
+h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  color: whitesmoke;
+}
+
+.stage {
+  width: 30.6rem;
+  height: 30.4rem;
+  background-color: orange;
+}
+
+.square {
+  width: 10rem;
+  height: 10rem;
+  background-color: gray;
+  display: inline-block;
+}
+
+.o {
+  position: relative;
+}
+
+.o::after {
+  content: '\1F6E1';
+  font-size: 5rem;
+  line-height: 10rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2rem;
+  right: 0;
+}
+
+.x {
+  position: relative;
+}
+
+.x::after {
+  content: '\2694';
+  font-size: 5rem;
+  line-height: 10rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2.7rem;
+  right: 0; 
+}
