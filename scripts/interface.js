@@ -14,7 +14,7 @@ function handleClick(event) {
 
     setTimeout(() => {
       alert(`O jogo acabou! O vencedor foi o jogador ${playerTime + 1} `)
-    }, 10)
+    }, 20)
   }
   updateSquare(position)
 }
